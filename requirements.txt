@@ -2,7 +2,7 @@ feedparser
 gitpython
 heroku3
 psycopg2-binary
-PyroFork==2.3.47
+Pyrofork==2.3.47
 python-dotenv
 Pyromod
 speedtest-cli
