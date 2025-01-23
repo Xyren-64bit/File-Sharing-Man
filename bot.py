@@ -18,7 +18,9 @@ from config import (
     TG_BOT_TOKEN,
     TG_BOT_WORKERS,
 )
+import pyrogram.utils
 
+pyrogram.utils.MIN_CHANNEL_ID = -1001968267182
 
 class Bot(Client):
     def __init__(self):
