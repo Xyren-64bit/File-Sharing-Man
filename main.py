@@ -1,3 +1,5 @@
 from bot import Bot
 
-Bot().run()
+if __name__ == "__main__":
+    bot = Bot()
+    bot.run()  # Memulai bot
