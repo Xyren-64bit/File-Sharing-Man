@@ -31,6 +31,7 @@ class Bot(Client):
             plugins={"root": "plugins"},
             workers=TG_BOT_WORKERS,
             bot_token=TG_BOT_TOKEN,
+            in_memory=True,
         )
         self.LOGGER = LOGGER
 
