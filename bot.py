@@ -20,7 +20,7 @@ from config import (
 )
 import pyrogram.utils
 
-pyrogram.utils.MIN_CHANNEL_ID = -1001968267182
+pyrogram.utils.MIN_CHANNEL_ID = -1002419981580
 
 class Bot(Client):
     def __init__(self):
