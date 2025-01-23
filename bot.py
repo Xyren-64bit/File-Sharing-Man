@@ -21,7 +21,7 @@ from config import (
 import pyrogram.utils
 
 pyrogram.utils.MIN_CHANNEL_ID = -100+ int(FORCE_SUB_CHANNEL)
-
+pyrogram.utils.MIN_CHANNEL_ID = -100+ int(FORCE_SUB_GROUP)
 class Bot(Client):
     def __init__(self):
         super().__init__(
