@@ -12,15 +12,15 @@ from config import (
     CHANNEL_ID,
     DB_URI,
     FORCE_MSG,
-    FORCE_SUB_CHANNEL,
-    FORCE_SUB_GROUP,
+    SUBS1,
+    SUBS2,
     HEROKU_API_KEY,
     HEROKU_APP_NAME,
     LOGGER,
     OWNER,
     PROTECT_CONTENT,
     START_MSG,
-    TG_BOT_TOKEN,
+    BOT_TOKEN,
 )
 from pyrogram import filters
 from pyrogram.types import Message
@@ -49,15 +49,15 @@ async def varsFunc(client: Bot, message: Message):
     text = f"""<u><b>CONFIG VARS</b></u> @{client.username}
 APP_ID = <code>{APP_ID}</code>
 API_HASH = <code>{API_HASH}</code>
-TG_BOT_TOKEN = <code>{TG_BOT_TOKEN}</code>
+BOT_TOKEN = <code>{BOT_TOKEN}</code>
 DATABASE_URL = <code>{DB_URI}</code>
 OWNER = <code>{OWNER}</code>
 ADMINS = <code>{ADMINS}</code>
     
 <u><b>CUSTOM VARS</b></u>
 CHANNEL_ID = <code>{CHANNEL_ID}</code>
-FORCE_SUB_CHANNEL = <code>{FORCE_SUB_CHANNEL}</code>
-FORCE_SUB_GROUP = <code>{FORCE_SUB_GROUP}</code>
+SUBS1 = <code>{SUBS1}</code>
+SUBS2 = <code>{SUBS2}</code>
 PROTECT_CONTENT = <code>{PROTECT_CONTENT}</code>
 START_MSG = <code>{START_MSG}</code>
 FORCE_MSG = <code>{FORCE_MSG}</code>
