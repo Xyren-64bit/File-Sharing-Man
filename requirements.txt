@@ -4,7 +4,6 @@ heroku3
 psycopg2-binary
 Pyrofork
 python-dotenv
-Pyromod
 speedtest-cli
 sqlalchemy==1.3.23
 TgCrypto
