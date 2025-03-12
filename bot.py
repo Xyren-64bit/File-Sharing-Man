@@ -15,7 +15,7 @@ from config import (
     SUBS2,
     LOGGER,
     OWNER,
-    TG_BOT_TOKEN,
+    BOT_TOKEN,
     TG_BOT_WORKERS,
 )
 import pyrogram.utils
@@ -30,7 +30,7 @@ class Bot(Client):
             api_id=API_ID,
             plugins={"root": "plugins"},
             workers=TG_BOT_WORKERS,
-            bot_token=TG_BOT_TOKEN,
+            bot_token=BOT_TOKEN,
             in_memory=True,
         )
         self.LOGGER = LOGGER
@@ -42,7 +42,7 @@ class Bot(Client):
             self.username = usr_bot_me.username
             self.namebot = usr_bot_me.first_name
             self.LOGGER(__name__).info(
-                f"TG_BOT_TOKEN detected!\n┌ First Name: {self.namebot}\n└ Username: @{self.username}\n——"
+                f"BOT_TOKEN detected!\n┌ First Name: {self.namebot}\n└ Username: @{self.username}\n——"
             )
         except Exception as a:
             self.LOGGER(__name__).warning(a)
