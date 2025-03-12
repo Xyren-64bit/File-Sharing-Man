@@ -8,7 +8,7 @@ from bot import Bot
 from config import (
     ADMINS,
     API_HASH,
-    APP_ID,
+    API_ID,
     CHANNEL_ID,
     DB_URI,
     FORCE_MSG,
