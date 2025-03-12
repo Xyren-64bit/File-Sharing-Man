@@ -2,7 +2,6 @@
 # Recode by @mrismanaziz
 # t.me/SharingUserbot & t.me/Lunatic0de
 
-import pyrogram.Client.listen
 import sys
 
 from pyrogram import Client, enums
